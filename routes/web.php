@@ -27,6 +27,10 @@ Route::get('/', function () {
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('category', 'CategoryController');
 Route::resource('posts', 'PostsController');
+Route::post('/hey', function () {
+
+    echo "hello world";
+});
 
 
 
