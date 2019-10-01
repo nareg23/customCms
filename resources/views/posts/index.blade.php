@@ -2,7 +2,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="">
                 <div class="card">
                     <table class="table">
                         <div class="card-header badge">
@@ -18,7 +18,7 @@
                         @foreach ($posts as $post)
                             <tr class="card-body">
                                 <td>
-                                    <img src="{{asset("storage/".$post->image)}}">
+                                    <img class="img-thumbnail" src="{{asset("storage/".$post->image)}}">
                                 </td>
                                 <td>{{$post->title}}</td>
                                 <td><a class="btn btn-primary btn-sm" href="{{route('posts.edit',$post)}}">Edit</a></td>
