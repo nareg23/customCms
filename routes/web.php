@@ -32,6 +32,10 @@ Route::post('/hey', function () {
     echo "hello world";
 });
 
+Route::post('/hey1', function () {
+
+    echo "hello hey";
+});
 
 
 
